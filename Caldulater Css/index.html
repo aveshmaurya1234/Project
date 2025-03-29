@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" id="main" >
+        <input type="text" id="display" value="" placeholder="0">
+
+        <div class="main2">
+            <input type="button" id="sym" class="btn" value="AC" onclick="main.display.value ='' ">
+            <input type="button" id="sym" class="btn" value="DEL" onclick="main.display.value = main.display.value.toString().slice(0, -1) ">
+            <input type="button" id="sym" class="btn" value="%" onclick="main.display.value +='%' ">
+            <input type="button" id="sym" class="btn" value="/" onclick="main.display.value +='/' ">
+        </div>
+
+        <div class="main2">
+            <input type="button" class="btn" value="1" onclick="main.display.value +='1' ">
+            <input type="button" class="btn" value="2" onclick="main.display.value +='2' ">
+            <input type="button" class="btn" value="3" onclick="main.display.value +='3' ">
+            <input type="button" class="btn" value="*" onclick="main.display.value +='*' " id="sym">
+        </div>
+
+        <div class="main2">
+            <input type="button" class="btn" value="4" onclick="main.display.value +='4' ">
+            <input type="button" class="btn" value="5" onclick="main.display.value +='5' ">
+            <input type="button" class="btn" value="6" onclick="main.display.value +='6' ">
+            <input type="button" class="btn" value="-" onclick="main.display.value +='-' " id="sym">
+        </div>
+        <div class="main2">
+            <input type="button" class="btn" value="7" onclick="main.display.value +='7' ">
+            <input type="button" class="btn" value="8" onclick="main.display.value +='8' ">
+            <input type="button" class="btn" value="9" onclick="main.display.value +='9' ">
+            <input type="button" class="btn" value="+" onclick="main.display.value +='+' " id="sym">
+        </div>
+        <div class="main2">
+            <input type="button" class="btn" value="00" onclick="main.display.value +='00' ">
+            <input type="button" class="btn" value="0" onclick="main.display.value +='0' ">
+            <input type="button" class="btn" value="." onclick="main.display.value =+'.' "  id="sym">
+            <input type="button" class="btn" value="="  id="equal" onclick="main.display.value = eval(main.display.value) ">
+        </div>
+    </form>
+</body>
+</html>
